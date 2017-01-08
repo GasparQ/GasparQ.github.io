@@ -168,3 +168,10 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
+
+/**
+*** My CSS section
+ */
+.padding-top-50 {
+    padding-top: 50px;
+}
