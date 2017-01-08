@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Implémenter un module</title>
+    <title>ZIA - Implémenter un module</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -40,7 +40,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand topnav" href="#">Start Bootstrap</a>
+            <a class="navbar-brand topnav" href="index.html">Start Bootstrap</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -49,10 +49,10 @@
                     <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="http://gasparq.github.io/module.html">Implémenter un module</a>
+                    <a href="module.html">Implémenter un module</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a href="doxygen/index.html">Doxygen</a>
                 </li>
             </ul>
         </div>
@@ -66,6 +66,57 @@
             <div class="col-md-12">
                 <h1>Implémenter un module</h1>
                 <p>Nous allons voir commenter implémenter facilement un module dans cette section.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Les différents types de modules</h2>
+                <p>Il existe 6 types de modules :</p>
+                <ul>
+                    <li>Core</li>
+                    <li>Logging</li>
+                    <li>Config Loader</li>
+                    <li>Network</li>
+                    <li>File Serve</li>
+                    <li>Module Handler</li>
+                </ul>
+                <p>Ils dérivent tous d'une interface / abstract. Une section sera dédiée pour l'implémentation de chacun
+                    de ces modules.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Core</h2>
+                <p>Le module Core représente le coeur du programme. Il va être le premier module chargé, et s'occuper de
+                    lancer tous les modules obligatoires. Il va aussi se charger de lancer le module
+                    <a href="#config-loader">Config Loader.</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Logging</h2>
+            </div>
+        </div>
+        <div class="row" id="config-loader">
+            <div class="col-md-12">
+                <h2>Config Loader</h2>
+                <p>Ce module va s'occuper de charger la configuration par défault, ainsi que celle du fichier s'il est
+                    fourni.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Network</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>File Serve</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Module Handler</h2>
             </div>
         </div>
     </div>
