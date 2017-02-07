@@ -1,254 +1,462 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<!--
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+AUTHOR : Vijayan PP
+PROJECT :NIM
+VERSION : 1.1
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+<html>
 <head>
-
     <meta charset="utf-8">
+    <meta name="viewport" content="width=devidev-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Quentin Gasparotto</title>
 
-    <title>Salty API</title>
+    <!-- [ FONT-AWESOME ICON ]
+        =========================================================================================================================-->
+    <link rel="stylesheet" type="text/css" href="library/font-awesome-4.3.0/css/font-awesome.min.css">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- [ PLUGIN STYLESHEET ]
+        =========================================================================================================================-->
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <!-- [ Boot STYLESHEET ]
+        =========================================================================================================================-->
+    <link rel="stylesheet" type="text/css" href="library/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="library/bootstrap/css/bootstrap.css">
+    <!-- [ DEFAULT STYLESHEET ]
+    =========================================================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/color/dark-green.css">
 
-    <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <!--Extension stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/timeline.css">
 </head>
+<body >
+<!-- [ LOADERs ]
+================================================================================================================================-->
+<div class="preloader">
+    <div class="loader theme_background_color">
+        <span></span>
 
-<body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
+    </div>
+</div>
+<!-- [ /PRELOADER ]
+=============================================================================================================================-->
+<!-- [WRAPPER ]
+=============================================================================================================================-->
+<div class="wrapper">
+    <!-- [NAV]
+   ============================================================================================================================-->
+    <!-- Navigation
+     ==========================================-->
+    <nav  class=" nim-menu navbar navbar-default navbar-fixed-top">
+        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a class="navbar-brand topnav" href="index.html">Salty API</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" style="text-transform: none;"><span class="themecolor">Q</span>uentin <span class="themecolor">G</span>asparotto</a>
             </div>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#about">Zia</a>
-                    </li>
-                    <li>
-                        <a href="#fonctionnement">Fonctionnement</a>
-                    </li>
-                    <li>
-                        <a href="#integration-serveur">Intégration</a>
-                    </li>
-                    <li>
-                        <a href="#implementer-module">Implémentation</a>
-                    </li>
-                    <li>
-                        <a href="doxygen/index.html">Doxygen</a>
-                    </li>
+                    <li><a href="#home" class="page-scroll">Acceuil</a></li>
+                    <li><a href="#about" class="page-scroll">A Propos de moi</a></li>
+                    <li><a href="#work" class="page-scroll">Réalisations</a></li>
+                    <li><a href="#exp" class="page-scroll">Experiences</a></li>
+                    <li><a href="#formation" class="page-scroll">Formation</a></li>
+                    <li><a href="#contact" class="page-scroll">Contact</a></li>
                 </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
     </nav>
 
 
-    <!-- Header -->
-    <a id="about"></a>
-    <div class="intro-header">
-        <div class="container">
+    <!-- [/NAV]
+  ============================================================================================================================-->
 
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>SaltAPI</h1>
-                        <h3>Une API pour le HTTPd / ZIA, proposée par Salty Studio.</h3>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/Adpa18/SaltAPI" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.yammer.com/epitech.eu/#/threads/inGroup?type=in_group&feedId=10244128" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-linkedin fa-windows"></i> <span class="network-name">Yammer</span></a>
-                            </li>
-                        </ul>
+    <!-- [/MAIN-HEADING]
+  ============================================================================================================================-->
+    <section class="main-heading" id="home">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="main-heading-content col-md-12 col-sm-12 text-center">
+                        <h1 class="main-heading-title"><span class="main-element themecolor" data-elements="Developpeur,Creatif,Ambitieux"></span></h1>
+                        <p class="main-heading-text">
+                            Découvrez-moi au travers de ce portfolio. Explorez mes réalisations,<br/>
+                            suivez mon parcours professionnel et n’hésitez pas à me contacter pour plus de détails.
+                        </p>
+                        <div class="btn-bar">
+                            <a href="#about" class="btn btn-custom theme_background_color page-scroll">Commencer</a>
+                            <a href="#contact" class="btn btn-custom-outline page-scroll">Me contacter</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
-        <!-- /.container -->
 
-    </div>
-    <!-- /.intro-header -->
+    </section>
 
-    <!-- Page Content -->
+    <!-- [/MAIN-HEADING]
+    ============================================================================================================================-->
 
-	<a  id="fonctionnement"></a>
-    <div class="content-section-a">
 
+    <!-- [ABOUTME]
+    ============================================================================================================================-->
+    <section class="aboutus white-background black" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Apprennez en plus sur notre API</h2>
-                    <p class="lead">La Salty API est une api de communication entre un serveur zia (apache like) et ses modules. <a href="" title="fonctionnement-API">Découvrez ici</a> les rouages de ce système et aprennez comment les modules et le serveur communiquent.</p>
+                <div class="col-md-12 text-center black">
+                    <h3 class="title">A PROPOS DE <span class="themecolor">MOI</span></h3>
+                    <p class="a-slog">
+                        Originaire du sud-ouest de la France dans le petit village de Barcelonne du Gers, je m’oriente assez vite vers le monde de l’informatique.
+                    </p>
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <!--todo change image-->
-                    <img class="img-responsive" src="img/ipad.png" alt="">
+            </div>
+            <div class="gap">
+
+            </div>
+
+            <div class="row about-box">
+                <div class="col-sm-4 text-center">
+                    <div class="margin-bottom">
+                        <i class="fa fa-heart-o"></i>
+                        <h4>MA PASSION</h4>
+                        <p class="black">
+                            C’est en classe de troisième que j’appréhende le langage C et que je tombe dans cet univers. Par la suite, lors du salon InfoSup Landes de Mont de Marsan, je découvre l’école Epitech proposant un cursus complètement différent de tout ce que j’avais connu jusqu’alors. Une pédagogie où nous apprenons par l’expérience des projets à réaliser afin que même à la sortie de l’école nous ne valorisions pas des connaissances, mais des compétences.
+                        </p>
+                    </div> <!-- / margin -->
+                </div> <!-- /col -->
+                <div class="col-sm-4 about-line text-center">
+                    <div class="margin-bottom">
+                        <i class="fa fa-globe"></i>
+                        <h4>MON AMBITION</h4>
+                        <p class="black">
+                            Je n’ai par la suite jamais cessé de repousser les limites de ce que je pouvais faire pour chacun des projets qui m’ont été donné de faire. Je prends grand plaisir à créer, innover, ajouter de nouvelles fonctionnalités, trouver de nouvelles idées d’amélioration à tout projet sur n’importe qu’elle technologie.
+                        </p>
+                    </div> <!-- / margin -->
+                </div><!-- /col -->
+                <div class="col-sm-4 text-center">
+                    <div class="margin-bottom">
+                        <i class="fa fa-graduation-cap"></i>
+                        <h4>MON ADAPTABILITÉ</h4>
+                        <p class="black">
+                            Le principal intérêt de ma formation réside en mon adaptabilité. En effet, le monde de l’informatique est en constante évolution ce qui nous pousse à toujours nous « mettre à jour » et ce en un minimum de temps. Voilà pourquoi, même si une technologie m’est inconnue, elle ne pourra l’être bien longtemps si je décide de m’y attaquer.
+                        </p>
+                    </div> <!-- / margin -->
+                </div><!-- /col -->
+                <div class="row">
+                    <div class="col-md-12 text-center black">
+                        <p class="a-slog">
+                            Mais pourquoi parler de ce que je peux faire quand vous pouvez le constater. Je vous propose de continuer la visite du site vers mes réalisations.
+                        </p>
+                        <div class="gap"></div>
+                        <a href="#work" class="btn btn-custom theme_background_color page-scroll">Mes réalisations</a>
+                    </div>
+                </div>
+            </div> <!-- /row -->
+
+
+
+
+        </div>
+    </section>
+
+
+    <!-- [/ABOUTME]
+    ============================================================================================================================-->
+
+
+
+    <!-- [RECENT-WORKS]
+    ============================================================================================================================-->
+    <section class="recent-works text-center" id="work">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="title">Mes <span class="themecolor">Réalisation</span></h3>
+                    <p class="a-slog">
+                        Pendant ma scolarité j’ai eu plaisir à réaliser des projets en C, C++, C# Symfony2, Unity3d et bien d’autre. Je vous propose de les découvrir.
+                    </p>
                 </div>
             </div>
 
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-    <a  id="integration-serveur"></a>
-    <div class="content-section-b">
-
-        <div class="container">
+            <div class="gap"></div>
 
             <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Intégrez notre API</h2>
-                    <p class="lead">Appréhendez le <a href="" title="integration-API-serveur">processus d'intégration</a> de notre API au sein d'un serveur zia classique.</p>
+                <div class="col-sm-4 port-item margin-bottom">
+                    <div class="item-img-wrap">
+                        <img src="images/wolf/wolf_sokoban.png" class="img-responsive" alt="workimg">
+                        <div class="item-img-overlay">
+                            <a href="images/wolf/wolf_sokoban.png" class="show-image">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work-desc">
+                        <h3><a href="#">Procédural</a></h3>
+                        <span>Langage C</span>
+                    </div>
+                </div> <!-- /portfolio-item -->
+
+                <div class="col-sm-4 port-item margin-bottom">
+                    <div class="item-img-wrap">
+                        <img src="images/bomberman/bomberman.png" class="img-responsive" alt="workimg">
+                        <div class="item-img-overlay">
+                            <a href="images/bomberman/bomberman.png" class="show-image">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work-desc">
+                        <h3><a href="#">Orienté Objet</a></h3>
+                        <span>Langage C++</span>
+                    </div>
+                </div> <!-- /portfolio-item -->
+
+                <div class="col-sm-4 port-item margin-bottom">
+                    <div class="item-img-wrap">
+                        <img src="images/work-3.jpg" class="img-responsive" alt="workimg">
+                        <div class="item-img-overlay">
+                            <a href="images/work-3.jpg" class="show-image">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work-desc">
+                        <h3><a href="#">Jeu vidéo</a></h3>
+                        <span>Unity3d</span>
+                    </div>
+                </div> <!-- /portfolio-item -->
+            </div> <!-- /row -->
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="Portfolio-Quentin-Gasparotto.pdf" target="_blank" class="btn btn-custom theme_background_color">Plus de réalisations</a>
                 </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <!--todo change image-->
-                    <img class="img-responsive" src="img/dog.png" alt="">
+            </div> <!-- /row -->
+
+        </div> <!-- /container -->
+    </section>
+    <!-- / Portfolio -->
+
+
+    <!-- [/OUR-RECENT WORKS]
+    ============================================================================================================================-->
+
+    <!-- [EXPERIENCE]
+   ============================================================================================================================-->
+    <section class="our-team white-background black">
+        <div class="container">
+            <div class="row text-center">
+
+                <!-- timeline -->
+                <div id="experience-timeline" class="timeline">
+                    <!-- Experience section -->
+                    <div id="exp" class="timeline-section timeline-row">
+                        <div class="timeline-cursor fa-stack fa-5x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-briefcase fa-stack-1x themecolor"></i>
+                        </div>
+                    </div>
+
+                    <!-- Experiences -->
+                    <div class="timeline-section timeline-row">
+                        <div class="timeline-inner-section left">
+                            <h3 class="timeline-title">Happy Capital</h3>
+                            <h4 class="timeline-subtitle">Développeur Web fullstack</h4>
+                            <p class="timeline-description">
+                                Stagiaire, ma mission était de migrer la plateforme vers le famework
+                                Symfony2. J'ai notamment optimisé le modèle de données du site et
+                                exporté l'ancienne base de données.
+                            </p>
+                        </div>
+                        <div class="timeline-cursor fa fa-circle fa-2x themecolor"></div>
+                    </div>
+                    <div class="timeline-section timeline-row">
+                        <div class="timeline-inner-section right">
+                            <h3 class="timeline-title">Epita</h3>
+                            <h4 class="timeline-subtitle">Assistant pédagogique</h4>
+                            <p class="timeline-description">
+                                Stagiaire, ma mission était d'accompagner les étudiants en première
+                                année à Epitech en animant les différentes activités pédagogiques.
+                            </p>
+                        </div>
+                        <div class="timeline-cursor fa fa-circle fa-2x themecolor"></div>
+                    </div>
+                    <div class="timeline-section timeline-row">
+                        <div class="timeline-inner-section left">
+                            <h3 class="timeline-title">Auto-entrepreneur</h3>
+                            <p class="timeline-description">
+                                Je me suis lancé en auto-entrepreneur à la fon de mon premier stage afin
+                                d'effectuer des missions en parallèle de mes études.
+                            </p>
+                        </div>
+                        <div class="timeline-cursor fa fa-circle fa-2x themecolor"></div>
+                    </div>
+
+                    <!-- Education section -->
+                    <div id="formation" class="timeline-section timeline-row">
+                        <div class="timeline-cursor fa-stack fa-5x">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-graduation-cap fa-stack-1x themecolor"></i>
+                        </div>
+                    </div>
+
+                    <!-- Grades -->
+                    <div class="timeline-section timeline-row">
+                        <div class="timeline-inner-section right">
+                            <h3>Epitech 2014-2019</h3>
+                            <h4>Titre d'expert dans les technologies de l'information et du numérique</h4>
+                            <p>
+                                Epitech forme des développeurs aux grandes capacités techniques.
+                                Sa pédagogie par projet, lui permet de former de futur professionnels
+                                ayant de grande capacités d'adaptation. La formation s'étend sur 5 ans.
+                                3 ans de bachelor technique et 2 ans de master expertise dont une année dans
+                                une université partenaire.
+                            </p>
+                        </div>
+                        <div class="timeline-cursor fa fa-circle fa-2x themecolor"></div>
+                    </div>
+                    <div class="timeline-section timeline-row">
+                        <div class="timeline-inner-section left">
+                            <h3>Epita 2015-2017</h3>
+                            <h4>Teaching and Coaching program</h4>
+                            <p>
+                                Epita teaching and coaching forme des pédagogues dans le domaine de l'informatique.
+                                La formation est découpé en 2 fois 1 semaine de formation pure et 2 fois
+                                6 mois de stage. J'ai pour ma part fait mon stage en tant qu'assistant pédagogique
+                                à Epitech.
+                            </p>
+                        </div>
+                        <div class="timeline-cursor fa fa-circle fa-2x themecolor"></div>
+                    </div>
+                    <div class="timeline-section timeline-row">
+                        <div class="timeline-inner-section right">
+                            <h3>Lycée Gaston Crampe 2014</h3>
+                            <h4></h4>
+                            <p>
+                                Baccalauréat Général scientifique options sciences de l'ingénieur
+                                spécialité mathématiques avec mention très bien (16.47)
+                            </p>
+                        </div>
+                        <div class="timeline-cursor fa fa-circle fa-2x themecolor"></div>
+                    </div>
+
+                    <div class="timeline-section">
+                        <div class="timeline-cursor fa-stack fa-5x">
+                            <a href="CV-Quentin-Gasparotto-Dev.pdf" target="_blank" style="color: black;">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-download fa-stack-1x themecolor"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
-        <!-- /.container -->
+    </section>
 
-    </div>
-    <!-- /.content-section-b -->
+    <!-- [/EXPERIENCE]
+    ============================================================================================================================-->
 
-    <a  id="implementer-module"></a>
-    <div class="content-section-a">
 
-        <div class="container">
 
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Créez votre propre module</h2>
-                    <p class="lead">Assimilez plus facilement la création d'un module au travers d'un <a href="module.html" title="tutoriel-implementation-module">tutoriel guidé</a> de A à Z sur la création d'un module de <!--todo insert example module title here-->. Nous vous montrerons nottamment <!--toto insert bullshit here-->.</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/phones.png" alt="">
+
+    <!-- [CONTACT]
+    ============================================================================================================================-->
+    <section class="inspiration" id="contact">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <article class="col-md-12 text-center">
+                        <div class="intermediate-container">
+                            <div class="heading">
+                                <h2>Me contacter</h2>
+                            </div>
+                            <div class="fa fa-stack fa-2x">
+                                <a href="https://github.com/GasparQ" target="_blank" style="color: black;">
+                                    <i class="fa fa-circle fa-stack-2x themecolor"></i>
+                                    <i class="fa fa-github fa-stack-1x"></i>
+                                </a>
+                            </div>
+                            <div class="fa fa-stack fa-2x">
+                                <a href="https://www.linkedin.com/in/quentin-gasparotto/" target="_blank" style="color: black;">
+                                    <i class="fa fa-circle fa-stack-2x themecolor"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x"></i>
+                                </a>
+                            </div>
+                            <div class="fa fa-stack fa-2x">
+                                <a href="mailto:quentin.gasparotto@epitech.eu" target="_blank" style="color: black;">
+                                    <i class="fa fa-circle fa-stack-2x themecolor"></i>
+                                    <i class="fa fa-envelope fa-stack-1x"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
-
         </div>
-        <!-- /.container -->
+    </section>
 
-    </div>
-    <!-- /.content-section-a -->
+    <!-- [/CONTACT]
+    ============================================================================================================================-->
 
-	<a  id="contact"></a>
-    <div class="banner">
+    <!-- [FOOTER]
+    ============================================================================================================================-->
 
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>Suivez la SaltAPI:</h2>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/Adpa18/SaltAPI" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                        </li>
-                        <li>
-                            <a href="https://www.yammer.com/epitech.eu/#/threads/inGroup?type=in_group&feedId=10244128" class="btn btn-default btn-lg"><i class="fa fa-windows fa-fw"></i> <span class="network-name">Yammer</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.banner -->
-
-    <!-- Footer -->
-    <footer>
+    <footer class="site-footer section-spacing text-center " id="eight">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#about">Zia</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#fonctionnement">Fonctionnement</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#integration-serveur">Intégration</a>
-                        </li>
-                        <li>
-                            <a href="#implementer-module">Implémentation</a>
-                        </li>
-                        <li>
-                            <a href="doxygen/index.html">Doxygen</a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Salty Studio 2016. Tous droits réservés.</p>
-                </div>
+                <div class="col-md-4" style="display: inline-block;float: none;"> <small>&copy; 2015 Nim. All rights reserved.</small></div>
             </div>
         </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <!-- [/FOOTER]
+    ============================================================================================================================-->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
 
-    <script>
-        $('a[href^="#"]').click(function(){
-            var the_id = $(this).attr("href");
 
-            console.log(the_id);
-            console.log($(this));
-            $('html, body').animate({
-                scrollTop:$(the_id).offset().top
-            }, 1250, 'easeInOutExpo');
-            return false;
-        });
-    </script>
+</div>
+
+
+<!-- [ /WRAPPER ]
+=============================================================================================================================-->
+
+<!-- [ DEFAULT SCRIPT ] -->
+<script src="library/modernizr.custom.97074.js"></script>
+<script src="library/jquery-1.11.3.min.js"></script>
+<script src="library/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<!-- [ PLUGIN SCRIPT ] -->
+<script src="library/vegas/vegas.min.js"></script>
+<script src="js/plugins.js"></script>
+<!-- [ TYPING SCRIPT ] -->
+<script src="js/typed.js"></script>
+<!-- [ COUNT SCRIPT ] -->
+<script src="js/fappear.js"></script>
+<script src="js/jquery.countTo.js"></script>
+<!-- [ SLIDER SCRIPT ] -->
+<script src="js/owl.carousel.js"></script>
+<script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/SmoothScroll.js"></script>
+
+<!-- [ COMMON SCRIPT ] -->
+<script src="js/common.js"></script>
 
 </body>
+
 
 </html>

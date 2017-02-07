@@ -1,1 +1,5 @@
-.idea/
+.idea
+DEMO
+nbproject
+php
+index-slider.html
